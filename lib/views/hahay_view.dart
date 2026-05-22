@@ -8,7 +8,7 @@ class hahayView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         titleTextStyle: const TextStyle(color: Colors.white, fontSize: 20),
-        backgroundColor: Colors.pink,
+        backgroundColor: Colors.pinkAccent,
         elevation: 0,
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

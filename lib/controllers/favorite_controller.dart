@@ -37,7 +37,7 @@ class FavoriteController extends GetxController {
           backgroundColor: Colors.pink,
           colorText: Colors.white,
 
-          snackPosition: SnackPosition.TOP,
+          snackPosition: SnackPosition.BOTTOM,
 
           margin: EdgeInsets.all(15),
 
@@ -59,7 +59,7 @@ class FavoriteController extends GetxController {
           backgroundColor: Colors.pink,
           colorText: Colors.white,
 
-          snackPosition: SnackPosition.TOP,
+          snackPosition: SnackPosition.BOTTOM,
 
           margin: EdgeInsets.all(15),
 
