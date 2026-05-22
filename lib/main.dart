@@ -16,7 +16,8 @@ void main() async {
   // =========================
   await Hive.initFlutter();
 
-  await Hive.openBox('favorite');
+  await Hive.openBox('favorite_spells');
+  await Hive.openBox('favourite_houses');
 
   // =========================
   // NOTIFICATION

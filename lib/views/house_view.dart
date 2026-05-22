@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:tolongsayamas/controllers/house_controller.dart';
 
 import '../controllers/profile_controller.dart';
-import 'profile_view.dart';
 import 'login_view.dart';
 
 class HouseView extends StatefulWidget {
@@ -86,6 +85,11 @@ class _HouseViewState extends State<HouseView> {
 
               child: ListTile(
                 contentPadding: const EdgeInsets.all(15),
+
+                leading: Text(
+                  data.emoji,
+                  style: const TextStyle(fontSize: 40),
+                ),
 
                 // =========================
                 // SPELL NAME

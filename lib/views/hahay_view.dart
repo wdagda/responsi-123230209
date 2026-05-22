@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class hahayView extends StatelessWidget {
   const hahayView({super.key});
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

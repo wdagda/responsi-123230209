@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import '../controllers/profile_controller.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
@@ -52,6 +54,8 @@ class ProfileView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ProfileController profileController = Get.put(ProfileController());
+
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -73,6 +77,20 @@ class ProfileView extends StatelessWidget {
                 "NIM: 123230209",
                 alignment: Alignment.bottomCenter,
               ),
+              const SizedBox(height: 20),
+              Obx(() {
+                if (profileController.favouriteHouses.isEmpty) {
+                  return const Text(
+                    "Belum ada house yang dipilih",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.grey),
+                  );
+                } else {
+                  return Text(
+                    "House Pilihan: ${profileController.favouriteHouses.first}",
+                    style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.blueAccent),
+                  );
+                }
+              }),
             ],
           ),
         ),

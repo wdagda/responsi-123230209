@@ -47,6 +47,9 @@ class ProfileController extends GetxController {
         );
       }
     } else {
+      await box.clear();
+      favouriteHouses.clear();
+
       box.put(house, house);
 
       favouriteHouses.add(house);
