@@ -34,7 +34,7 @@ class ProfileController extends GetxController {
           "Profile Removed",
           "$house dihapus dari Profile",
 
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.pink,
           colorText: Colors.white,
 
           snackPosition: SnackPosition.TOP,
@@ -59,7 +59,7 @@ class ProfileController extends GetxController {
           "Profile Added",
           "$house ditambahkan ke Profile",
 
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.pink,
           colorText: Colors.white,
 
           snackPosition: SnackPosition.TOP,

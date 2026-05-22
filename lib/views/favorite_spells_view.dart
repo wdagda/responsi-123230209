@@ -26,20 +26,20 @@ class _FavoriteSpellsViewState extends State<FavoriteSpellsView> {
       // =========================
       // BACKGROUND
       // =========================
-      backgroundColor: const Color(0xFFF1E2D1),
+      backgroundColor: Colors.pink[50],
 
       appBar: AppBar(
         // =========================
         // APPBAR COLOR
         // =========================
-        backgroundColor: const Color(0xFFDCC3AA),
+        backgroundColor: Colors.pinkAccent,
 
         elevation: 0,
 
         title: const Text(
           "Favorite Spells",
 
-          style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
 
@@ -72,7 +72,7 @@ class _FavoriteSpellsViewState extends State<FavoriteSpellsView> {
               // =========================
               // CARD COLOR
               // =========================
-              color: const Color(0xFFFFF8F0),
+              color: Colors.white,
 
               margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
 
@@ -109,7 +109,7 @@ class _FavoriteSpellsViewState extends State<FavoriteSpellsView> {
                   ),
 
                   onPressed: () {
-                    controller.toggleFavorite(spell, showSnackbar: false);
+                    controller.toggleFavorite(spell);
                   },
                 ),
               ),

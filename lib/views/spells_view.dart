@@ -22,17 +22,17 @@ class _SpellsViewState extends State<SpellsView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF1E2D1),
+      backgroundColor: Colors.pink[50],
 
       appBar: AppBar(
-        backgroundColor: const Color(0xFFDCC3AA),
+        backgroundColor: Colors.pinkAccent,
 
         elevation: 0,
 
         title: const Text(
           "Spells",
 
-          style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
 
         actions: [
@@ -44,7 +44,7 @@ class _SpellsViewState extends State<SpellsView> {
                 "Logout Success",
                 "Berhasil logout",
 
-                backgroundColor: Colors.orange,
+                backgroundColor: Colors.pink,
                 colorText: Colors.white,
 
                 snackPosition: SnackPosition.TOP,
@@ -57,7 +57,7 @@ class _SpellsViewState extends State<SpellsView> {
               );
             },
 
-            icon: const Icon(Icons.logout_rounded, color: Colors.black87),
+            icon: const Icon(Icons.logout_rounded, color: Colors.white),
           ),
         ],
       ),
@@ -66,9 +66,7 @@ class _SpellsViewState extends State<SpellsView> {
         onPressed: () {
           Get.to(() => const FavoriteSpellsView());
         },
-        backgroundColor: const Color(
-          0xFFEADBCE,
-        ), // Warna mirip container di gambar
+        backgroundColor: Colors.pink.shade100, // Warna mirip container di gambar
         elevation: 4,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         child: const Icon(Icons.favorite, color: Colors.red, size: 30),
@@ -87,7 +85,7 @@ class _SpellsViewState extends State<SpellsView> {
               // =========================
               // CARD COLOR
               // =========================
-              color: const Color(0xFFFFF8F0),
+              color: Colors.white,
 
               margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
 

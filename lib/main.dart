@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
 
       title: 'Harry Potter App',
 
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(primarySwatch: Colors.pink),
 
       home: isLogin ? HomePage() : LoginView(),
     );

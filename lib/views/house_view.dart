@@ -20,17 +20,17 @@ class _HouseViewState extends State<HouseView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF1E2D1),
+      backgroundColor: Colors.pink[50],
 
       appBar: AppBar(
-        backgroundColor: const Color(0xFFDCC3AA),
+        backgroundColor: Colors.pinkAccent,
 
         elevation: 0,
 
         title: const Text(
           "House",
 
-          style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
 
         actions: [
@@ -42,7 +42,7 @@ class _HouseViewState extends State<HouseView> {
                 "Logout Success",
                 "Berhasil logout",
 
-                backgroundColor: Colors.orange,
+                backgroundColor: Colors.pink,
                 colorText: Colors.white,
 
                 snackPosition: SnackPosition.TOP,
@@ -55,7 +55,7 @@ class _HouseViewState extends State<HouseView> {
               );
             },
 
-            icon: const Icon(Icons.logout_rounded, color: Colors.black87),
+            icon: const Icon(Icons.logout_rounded, color: Colors.white),
           ),
         ],
       ),
@@ -73,7 +73,7 @@ class _HouseViewState extends State<HouseView> {
               // =========================
               // CARD COLOR
               // =========================
-              color: const Color(0xFFFFF8F0),
+              color: Colors.white,
 
               margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
 

@@ -17,7 +17,7 @@ class LoginController extends GetxController {
         "eum",
         "username minimal 5 karakter bub",
 
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.pink,
         colorText: Colors.white,
 
         snackPosition: SnackPosition.BOTTOM,
@@ -37,7 +37,7 @@ class LoginController extends GetxController {
           "Login Success",
           "Berhasil login",
 
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.pink,
           colorText: Colors.white,
 
           snackPosition: SnackPosition.BOTTOM,
@@ -55,7 +55,7 @@ class LoginController extends GetxController {
           "Login Failed",
           "Username / Password salah",
 
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.pink,
           colorText: Colors.white,
 
           snackPosition: SnackPosition.BOTTOM,

@@ -34,7 +34,7 @@ class FavoriteController extends GetxController {
           "Favorite Removed",
           "$spell dihapus dari favorite",
 
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.pink,
           colorText: Colors.white,
 
           snackPosition: SnackPosition.TOP,
@@ -56,7 +56,7 @@ class FavoriteController extends GetxController {
           "Favorite Added",
           "$spell ditambahkan ke favorite",
 
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.pink,
           colorText: Colors.white,
 
           snackPosition: SnackPosition.TOP,

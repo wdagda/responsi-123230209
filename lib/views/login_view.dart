@@ -12,14 +12,14 @@ class LoginView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // BACKGROUND
-      backgroundColor: const Color(0xFFF1E2D1),
+      backgroundColor: Colors.pink[50],
       body: Center(
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(25),
             child: Card(
               // WARNA CARD
-              color: const Color(0xFFFFF8F0),
+              color: Colors.white,
               elevation: 8,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
@@ -34,7 +34,7 @@ class LoginView extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(
-                        color: const Color(0xFFDCC3AA),
+                        color: Colors.pinkAccent,
                         shape: BoxShape.circle,
                       ),
                       child: const Icon(
@@ -117,9 +117,9 @@ class LoginView extends StatelessWidget {
 
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFFDCC3AA),
+                          backgroundColor: Colors.pinkAccent,
 
-                          foregroundColor: Colors.black,
+                          foregroundColor: Colors.white,
 
                           padding: const EdgeInsets.symmetric(vertical: 16),
 

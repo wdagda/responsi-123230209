@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
             fontWeight: FontWeight.bold,
           ),
         ),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.pinkAccent,
         elevation: 0,
         actions: [
           IconButton(
@@ -123,12 +123,12 @@ class _HomePageState extends State<HomePage> {
   ) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.blue[50],
-        foregroundColor: Colors.blue[900],
+        backgroundColor: Colors.pink[50],
+        foregroundColor: Colors.pink[900],
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
-          side: BorderSide(color: Colors.blue.shade100),
+          side: BorderSide(color: Colors.pink.shade100),
         ),
         padding: const EdgeInsets.symmetric(horizontal: 8),
       ),

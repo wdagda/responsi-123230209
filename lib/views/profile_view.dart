@@ -6,9 +6,7 @@ class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
 
   Widget anggota(
-    String foto,
-    String nama,
-    String nim, {
+    String username, {
     Alignment alignment = Alignment.center,
   }) {
     return Container(
@@ -26,27 +24,21 @@ class ProfileView extends StatelessWidget {
 
       child: Column(
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(20),
-            child: Image.asset(
-              foto,
-              width: 200,
-              height: 200,
-              fit: BoxFit.cover,
-              alignment: alignment,
+          CircleAvatar(
+            radius: 100,
+            backgroundColor: Colors.pink.shade100,
+            child: Text(
+              username.isNotEmpty ? username[0].toUpperCase() : '?',
+              style: const TextStyle(fontSize: 80, fontWeight: FontWeight.bold, color: Colors.pink),
             ),
           ),
 
           const SizedBox(height: 15),
 
           Text(
-            nama,
+            username,
             style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
-
-          const SizedBox(height: 5),
-
-          Text(nim, style: const TextStyle(fontSize: 16, color: Colors.grey)),
         ],
       ),
     );
@@ -62,8 +54,9 @@ class ProfileView extends StatelessWidget {
           "Data Kelompok",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.pinkAccent,
       ),
+      backgroundColor: Colors.pink[50],
 
       body: Padding(
         padding: const EdgeInsets.all(20),
@@ -72,10 +65,7 @@ class ProfileView extends StatelessWidget {
           child: Column(
             children: [
               anggota(
-                "lib/assets/gipa.jpeg",
-                "Ghiva Satria Widagda",
-                "NIM: 123230209",
-                alignment: Alignment.bottomCenter,
+                "xighaav",
               ),
               const SizedBox(height: 20),
               Obx(() {
@@ -87,7 +77,7 @@ class ProfileView extends StatelessWidget {
                 } else {
                   return Text(
                     "House Pilihan: ${profileController.favouriteHouses.first}",
-                    style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.blueAccent),
+                    style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.pinkAccent),
                   );
                 }
               }),
